@@ -1,6 +1,6 @@
 # gondorcet
 
-[![GoDoc](https://godoc.org/github.com/vsayer/gondorcet?status.svg)](https://godoc.org/github.com/vsayer/gondorcet) [![Build Status](https://travis-ci.org/vsayer/gondorcet.svg?branch=master)](https://travis-ci.org/vsayer/gondorcet)
+[![Build Status](https://travis-ci.org/vsayer/gondorcet.svg?branch=master)](https://travis-ci.org/vsayer/gondorcet) [![Coverage](http://gocover.io/_badge/github.com/vsayer/blu?0)](http://gocover.io/github.com/vsayer/gondorcet) [![GoDoc](https://godoc.org/github.com/vsayer/gondorcet?status.svg)](https://godoc.org/github.com/vsayer/gondorcet)
 
 Gondorcet is a library of condorcet methods for gophers.
 
@@ -37,9 +37,9 @@ func main() {
 	// tally votes
 	election.TallyCopeland()
 
-	// show election results
-	fmt.Println("results:", e.GetResults())
-	fmt.Println("winner:", e.GetWinner())
+	// show election results and winner
+	fmt.Println("results:", election.GetResults())
+	fmt.Println("winner:", election.GetWinner())
 }
 ```
 
