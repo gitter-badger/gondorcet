@@ -5,7 +5,7 @@
 Gondorcet is a library of condorcet methods for gophers.
 
 ## Install
-Install gondorcet as you would any other Go program:
+Install gondorcet as you would any other Go library:
 ```shell
 go get github.com/vsayer/gondorcet
 ```
