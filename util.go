@@ -8,13 +8,13 @@ import (
 // AddCandidates adds a variadic set of candidates and returns a tuple of candidates and results
 func AddCandidates(candidates ...string) ([]string, map[string]int) {
 	candidateSlice := make([]string, 0)
-	resultSlice := make(map[string]int)
+	resultMap := make(map[string]int)
 	for _, candidate := range candidates {
 		// TODO: if candidate already in, throw error or skip
 		candidateSlice = append(candidateSlice, candidate)
-		resultSlice[candidate] = 0
+		resultMap[candidate] = 0
 	}
-	return candidateSlice, resultSlice
+	return candidateSlice, resultMap
 }
 
 // Contains determines whether a key is in a list

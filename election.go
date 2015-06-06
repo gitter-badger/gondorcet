@@ -1,6 +1,6 @@
 package gondorcet
 
-// Election consists of a slice of candidates, slice of votes, a delimiter, a winner, and results
+// Election consists of a list of candidates, list of votes, a delimiter, a winner, and results
 type Election struct {
 	candidates []string
 	votes []string
@@ -32,12 +32,12 @@ func (e Election) GetResults() map[string]int {
 
 // NewElection constructs a new election using the default '>' delimiter
 func NewElection(candidates ...string) *Election {
-	candidateSlice, resultSlice := AddCandidates(candidates...)
-	return &Election{delimiter: ">", winner: "", candidates: candidateSlice, results: resultSlice}
+	candidateSlice, resultMap := AddCandidates(candidates...)
+	return &Election{delimiter: ">", votes: make([]string, 0), winner: "", candidates: candidateSlice, results: resultMap}
 }
 
 // NewElection constructs a new election using the user-specified delimiter
 func NewElectionWithDelimiter(delimiter string, candidates ...string) *Election {
-	candidateSlice, resultSlice := AddCandidates(candidates...)
-	return &Election{delimiter: delimiter, winner: "", candidates: candidateSlice, results: resultSlice}
+	candidateSlice, resultMap := AddCandidates(candidates...)
+	return &Election{delimiter: delimiter, votes: make([]string, 0), winner: "", candidates: candidateSlice, results: resultMap}
 }

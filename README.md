@@ -54,7 +54,7 @@ func main() {
 - [ ] dodgson's method
 - [ ] ranked pairs
 - [ ] schulze method
-- [ ] unit tests courtesy of [GoConvey](http://goconvey.co/)
+- [x] unit tests courtesy of [GoConvey](http://goconvey.co/)
 - [ ] readthedocs integration
 - [ ] lint for more idiomatic code
 - [ ] refactor for more idiomatic code
