@@ -1,5 +1,7 @@
 # gondorcet
 
+[![Join the chat at https://gitter.im/vsayer/gondorcet](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vsayer/gondorcet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/vsayer/gondorcet.svg?branch=master)](https://travis-ci.org/vsayer/gondorcet) [![Coverage](http://gocover.io/_badge/github.com/vsayer/blu?0)](http://gocover.io/github.com/vsayer/gondorcet) [![GoDoc](https://godoc.org/github.com/vsayer/gondorcet?status.svg)](https://godoc.org/github.com/vsayer/gondorcet)
 
 Gondorcet is a library of condorcet methods for gophers.
